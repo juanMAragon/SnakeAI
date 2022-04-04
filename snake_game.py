@@ -29,7 +29,7 @@ GRAY = (77, 77, 77)
 
 # game constants
 BLOCK_SIZE = 20
-SPEED = 10  # the higher the number the faster the game is
+SPEED = 40  # the higher the number the faster the game is
 font = pygame.font.Font('./Our-Arcade-Games.ttf', 25)
 
 # agent control game
