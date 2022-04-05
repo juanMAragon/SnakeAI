@@ -4,7 +4,6 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Usage](#usage)
 
 ## About <a name = "about"></a>
 
@@ -18,7 +17,11 @@ This project has been done following the tutorials on youtube from @Python_Engin
     <img src="./imgs/game_1.png" width="400px"</img> 
 </div>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+### Description:
+
+<div align="center">
+    <img src="./imgs/description.png" </img> 
+</div>
 
 ### Prerequisites
 
@@ -27,10 +30,8 @@ What things you need to install the software and how to install them.
 ```
 pip install requirements.txt
 
-python snake_game.py
+python snake_agent.py
 ```
 
 
-## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
