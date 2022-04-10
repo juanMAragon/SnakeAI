@@ -5,7 +5,10 @@ from collections import deque
 from snake_game import SnakeGameAI, Direction, Point
 from model import Linear_QNet, Q_trainer
 from helper import plot
-
+from pycallgraph import PyCallGraph
+from pycallgraph import Config
+from pycallgraph import GlobbingFilter
+from pycallgraph.output import GraphvizOutput
 
 MAX_MEMORY = 100_000
 BATCH_SIZE = 1000
@@ -112,7 +115,9 @@ def train():
     agent = Agent()
     game = SnakeGameAI()
 
-    while True:
+    i = 0
+    while i<4:
+        i += 1
         # get old state
         state_old = agent.get_state(game)
 
@@ -151,4 +156,13 @@ def train():
 
 if __name__ == '__main__':
 
-    train()
+    config = Config()
+    config.trace_filter = GlobbingFilter(exclude=[
+        'pycallgraph.*',
+        '*.secret_function',
+    ])
+
+    graphviz = GraphvizOutput(output_file='./imgs/filter_exclude.png')
+
+    with PyCallGraph(output=graphviz, config=config):
+        train()

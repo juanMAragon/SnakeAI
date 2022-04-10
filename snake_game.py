@@ -6,6 +6,7 @@ from enum import Enum
 from collections import namedtuple
 import time
 import numpy as np
+import os
 
 pygame.init()  # required to initialize all the modules correctly
 
@@ -29,8 +30,8 @@ GRAY = (77, 77, 77)
 
 # game constants
 BLOCK_SIZE = 20
-SPEED = 40  # the higher the number the faster the game is
-font = pygame.font.Font('./Our-Arcade-Games.ttf', 25)
+SPEED = 200  # the higher the number the faster the game is
+font = pygame.font.Font(os.path.join('utils','Our-Arcade-Games.ttf'), 25)
 
 # agent control game
 class SnakeGameAI:

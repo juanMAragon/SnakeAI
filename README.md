@@ -14,13 +14,13 @@ This project has been done following the tutorials on youtube from @Python_Engin
 ## Getting Started <a name = "getting_started"></a>
 
 <div align="center">
-    <img src="./imgs/game_1.png" width="400px"</img> 
+    <img src="./utils/game_1.png" width="400px"</img> 
 </div>
 
 ### Description:
 
 <div align="center">
-    <img src="./imgs/description.png" </img> 
+    <img src="./utils/description.png" </img> 
 </div>
 
 ### Prerequisites
